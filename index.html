@@ -659,7 +659,12 @@
             <form action="" class="contact-form">
               <p class="contact-form-text">Leave your contacts and we will call you back</p>
               <label for="user_name" class="name contact-form-input">Name</label>
+                <div class="contact-form-input-wrapper">
                 <input type="name" name="name" id="user_name" required class="contact-text" />
+                <svg class="contact-form-input-icon" width="12px" height="12px">
+                  <use href="./image/icon.svg#icon-person"></use>
+                </svg>
+                </div>
               <label for="user_tel" class="tel contact-form-input">Phone</label>
                 <input type="tel" name="tel" id="user_tel" required class="contact-text" />
               <label for="user_email" class="email contact-form-input">Email</label>
