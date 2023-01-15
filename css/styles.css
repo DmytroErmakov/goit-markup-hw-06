@@ -180,17 +180,10 @@ body {
 
 .hero-btn:hover,
 .hero-btn:focus {
-  padding: 16px 32px;
-  margin-top: 48px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.04em;
-  color: var(--first-background-color);
+  
+  
   background-color: var(--fifth-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-color: var(--fifth-color);
-  border-radius: 4px;
   cursor: pointer;
 }
 
@@ -602,7 +595,50 @@ body {
 
 }
 
+.footer-subscribe-btn {
 
+  
+
+}
+
+.footer-subscribe-list-item-send {
+  
+}
+
+.footer-subscribe-send-btn {
+  
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+  gap: 16px;
+
+
+  width: 165px;
+  height: 40px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: var(--first-background-color);
+  background-color: var(--third-color);
+  border-radius: 4px;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-subscribe-send-btn:hover,
+.footer-subscribe-send-btn:focus {
+  background-color: var(--fifth-color);
+  border-color: var(--fifth-color);
+  cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+}
 
 /* filter */
 
