@@ -605,6 +605,11 @@ body {
   
 }
 
+.footer-subscribe-form {
+  display: flex;
+
+}
+
 .footer-subscribe-send-btn {
   
   display: flex;
@@ -921,7 +926,13 @@ a {
   border-radius: 50%;
   background-color: var(--fouth-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-window:hover, .modal-window:focus {
+  outline: none;
+  background-color: var(--third-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn-icon {
@@ -970,6 +981,12 @@ a {
   
 }
 
+.contact-form-input:hover,
+.contact-form-input:focus,
+.contact-form-input:active {
+  outline: none;
+}
+
 .contact-form-input-wrapper {
   position: relative;
   margin: auto;
@@ -988,6 +1005,12 @@ a {
    
   background-size: contain; 
 
+}
+
+.contact-form-input-icon:hover,
+.contact-form-input-icon:focus,
+.contact-form-input-icon:active {
+  fill: var(--third-color);
 }
 
 .name {
@@ -1046,25 +1069,31 @@ a {
 .contact-text:hover,
 .contact-text:focus,
 .contact-text:active {
-  
+  outline: none;
   border-color: var(--third-color);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--third-color); 
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
-.contact-form:hover, 
-.contact-form:focus, 
-.contact-form:active, {
+ {
   border-color: var(--third-color);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--third-color);
 }
+
 
 .contact-form-input-wrapper:hover,
 .contact-form-input-wrapper:focus,
 .contact-form-input-wrapper:active {
-  
+  outline: none;
   fill: var(--third-color); 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
+
+
+
 
 .contact-textarea {
   margin: auto;
@@ -1088,6 +1117,7 @@ a {
 .contact-textarea:hover,
 .contact-textarea:focus,
 .contact-textarea:active {
+  outline: none;
   border-color: var(--third-color);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -1102,6 +1132,14 @@ a {
 
 .policy {
   display: flex;
+}
+
+.contact-policy:hover,
+.contact-policy:focus,
+.contact-police:active {
+  outline: none;
+  fill: var(--third-color);
+
 }
 
 .contact-form-policy {

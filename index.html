@@ -656,57 +656,48 @@
         </div>
         <div class="footer-subscribe">
           <p class="footer-subscribe-text">Subscribe</p>
-            <ul class="footer-subscribe-list-item">
-                <li class="footer-subscribe-list-item-send">
-                    <form action="">
-                        <label for="user_email" class="email footers-subscribe-form-input"></label>
-                <input type="email" name="email" id="user_email" required class="contact-email" placeholder="Email"/>
-                    </form>
-                </li>
-                <div class="footer-subscribe-btn">
-                <li class="footer-subscribe-list-item-send">
-                    <button type="submit" class="footer-subscribe-send-btn">
-                        <p>Subscribe</p>
+            <form class="footer-subscribe-form">
+                <input type="email" name="email" id="user_email" class="contact-email" placeholder="Email" >
+                <button type="submit" class="footer-subscribe-send-btn">
+                  <span>Subscribe</span>
                     <svg class="footer-social-list-item-link-svg" width="24px" height="20px">
                       <use href="./image/icon.svg#icon-icon-send" class="icon-send"></use>
                     </svg>
-                    </button>
-                </li>
-                </div>
-            </ul>
+                </button>
+            </form>
         </div>
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
-            <form action="" class="contact-form">
+            <form action="#" class="contact-form">
               <p class="contact-form-text">Leave your contacts and we will call you back</p>
               <label for="user_name" class="name contact-form-input">Name</label>
                 <div class="contact-form-input-wrapper">
-                <input type="name" name="name" id="user_name" required class="contact-text" />
-                <svg class="contact-form-input-icon icon-person" width="12px" height="12px">
+                <input type="text" name="name" id="user_name" class="contact-text" >
+                <svg class="contact-form-input-icon icon-person form" width="12px" height="12px">
                   <use href="./image/icon.svg#icon-person"></use>
                 </svg>
                 </div>
               <label for="user_tel" class="tel contact-form-input">Phone</label>
               <div class="contact-form-input-wrapper">
-                <input type="tel" name="tel" id="user_tel" required class="contact-text" />
+                <input type="tel" name="tel" id="user_tel" required class="contact-text" >
                 <svg class="contact-form-input-icon icon-phone" width="13px" height="13px">
                   <use href="./image/icon.svg#icon-phone"></use>
                 </svg>  
               </div>  
               <label for="user_email" class="email contact-form-input">Email</label>
               <div class="contact-form-input-wrapper">
-                <input type="email" name="email" id="user_email" required class="contact-text" />
+                <input type="email" name="email" class="contact-text" >
                 <svg class="contact-form-input-icon icon-email" width="15px" height="12px">
                   <use href="./image/icon.svg#icon-email"></use>
                 </svg>  
               </div>
-                <label for="comment" class="comment contact-form-input">Comment</label>
-                <textarea type="comment" name="comment" placeholder="Text input" class="contact-textarea"></textarea>
+                <label class="comment contact-form-input">Comment</label>
+                <textarea name="text" placeholder="Text input" class="contact-textarea"></textarea>
                 <div class="contact-checkbox-policy">
                   <label for="policy" class="policy contact-form-input">
-                    <input type="checkbox" name="policy" value="policy" />
-                    <p class="contact-form-policy">I accept the terms and conditions of the
-                      <a href="./index.html" class="contact-form-privacy-link">Privacy Policy</a></p>
+                    <input type="checkbox" name="policy" id="policy" value="policy" class="contact-policy">
+                    <span class="contact-form-policy">I accept the terms and conditions of the
+                      <a href="./index.html" class="contact-form-privacy-link">Privacy Policy</a></span>
                   </label>
                 </div>
               <button type="submit" class="contact-form-btn">Send</button>
